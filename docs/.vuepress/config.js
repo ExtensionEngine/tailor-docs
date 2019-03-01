@@ -22,6 +22,5 @@ module.exports = {
         '@img': 'images/'
       }
     }
-  },
-  base: "/<REPO>/"
+  }
 }
