@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Tailor',
-  description: 'Tailor - short description',
+  description: 'Content authoring platform',
   themeConfig: {
     nav: [
       { text: 'Tailor', link: 'https://github.com/ExtensionEngine/tailor' },
@@ -22,5 +22,6 @@ module.exports = {
         '@img': 'images/'
       }
     }
-  }
+  },
+  base: '/tailor-docs/'
 }
