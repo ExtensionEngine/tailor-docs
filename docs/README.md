@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /default-logo-full.svg
-actionText: Get Started →
-actionLink: /guide/
+actionText: Learn more →
+actionLink: /architecture/
 footer: MIT Licensed | Copyright © 2017-present ExtensionEngine, LLC
 ---
 
@@ -30,14 +30,6 @@ footer: MIT Licensed | Copyright © 2017-present ExtensionEngine, LLC
 </div>
 
 ## Who's using Tailor?
-<img
-  :src="$withBase('/ArtCenter_LogoGrayscale-180x45.jpg')"
-  alt="Art Center logo"
-  style="margin-left: 25%; margin-right: 10rem;"/>
-<img
-  :src="$withBase('/CGMA-Logo-1-160x56.png')"
-  alt="CGMA logo"/>
-
 
 <div align="center">
   <img :src="$withBase('/EE_Logo_C-sized.png')" alt="Extension Engine logo"/>

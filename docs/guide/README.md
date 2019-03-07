@@ -12,6 +12,6 @@ Installation steps
 
 Deployment steps
 
-## Configuration
+## Sample configuration
 
 Configuration steps

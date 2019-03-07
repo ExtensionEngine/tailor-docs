@@ -5,11 +5,13 @@ module.exports = {
     nav: [
       { text: 'Tailor', link: 'https://github.com/ExtensionEngine/tailor' },
       { text: 'Boutique', link: 'https://github.com/ExtensionEngine/boutique' },
+      { text: 'Tape', link: 'https://github.com/ExtensionEngine/tape' }
     ],
     sidebar: [
       '/',
-      '/guide/',
       '/architecture/',
+      '/guide/',
+      '/guide/configuration/',
       '/content/',
       '/content/contribute/',
       '/contribute/',
