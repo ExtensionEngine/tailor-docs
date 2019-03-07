@@ -1,6 +1,9 @@
 module.exports = {
   title: 'Tailor',
   description: 'Content authoring platform',
+  head: [
+    ['link', { rel: 'icon', href: '/default-logo-full.svg' }]
+  ],
   themeConfig: {
     nav: [
       { text: 'Tailor', link: 'https://github.com/ExtensionEngine/tailor' },
