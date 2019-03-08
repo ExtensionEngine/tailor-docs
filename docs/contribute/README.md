@@ -2,4 +2,6 @@
 
 How open source community members can contribute?
 
-TBD
+::: tip
+This is a tip
+:::
