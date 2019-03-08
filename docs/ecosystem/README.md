@@ -13,15 +13,15 @@
   <img src="/" alt="Internal Tailor architecture"/>
 </div>
 
-[Getting started](/guide/)
+[Getting started with Tailor →](/guide-tailor/)
 
 ### Course schema
 
 <p>What is a course schema?</p>
 <p>What does it provide?</p>
 
-``` js
-TODO: provide course schema examples
+``` json
+TODO: provide course schema example
 ```
 
 ## Boutique
@@ -29,23 +29,14 @@ TODO: provide course schema examples
 <p>What is Boutique?</p>
 <p>Why was it created? (goal, purpose)</p>
 
-### Setup steps:
-
-``` js
-TODO: Cloning and integration with Tailor
-```
-
+[Getting started with Boutique →](/guide-boutique/)
 
 ## Tape
 
 <p>What is Tape?</p>
 <p>Why was it created? (goal, purpose)</p>
 
-### Setup steps:
-
-``` js
-TODO: Cloning and integration with Tailor
-```
+[Getting started with Tape →](/guide-tape/)
 
 ## Teaching elements
 
@@ -56,8 +47,4 @@ TODO: Cloning and integration with Tailor
   <img src="/" alt="Teaching element architecture"/>
 </div>
 
-### List of teaching elements
-
-| Teaching element             | Description       | Repo                                |
-| ---------------------------- |:-----------------:| -----------------------------------:|
-| Name of the teaching element | Short description | [Repository](http://www.github.com) |
+[List of Teaching Elements →](/teaching-elements/)

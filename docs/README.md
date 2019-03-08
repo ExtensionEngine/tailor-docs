@@ -2,7 +2,7 @@
 home: true
 heroImage: /default-logo-full.svg
 actionText: Learn more →
-actionLink: /architecture/
+actionLink: /ecosystem/
 footer: MIT Licensed | Copyright © 2017-present ExtensionEngine, LLC
 ---
 

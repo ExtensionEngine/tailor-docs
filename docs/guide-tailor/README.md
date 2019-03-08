@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started with Tailor
 
 ::: warning COMPATIBILITY NOTE
 Tailor requirements (Node version, etc.)
@@ -6,12 +6,18 @@ Tailor requirements (Node version, etc.)
 
 ## Local installation
 
-Installation steps
+``` sh
+TODO: Installation steps
+```
 
 ## Server deployment
 
-Deployment steps
+``` sh
+TODO: Deployment steps
+```
 
 ## Sample configuration
 
-Configuration steps
+``` json
+TODO: Configuration steps
+```
