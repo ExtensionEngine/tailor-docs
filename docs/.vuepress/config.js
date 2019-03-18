@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Tailor',
-  description: 'Content authoring platform',
+  title: 'Custom Learning Experiences',
+  description: 'Strategy, Implementation, Support',
   head: [
     ['link', { rel: 'icon', href: '/default-logo-full.svg' }]
   ],
