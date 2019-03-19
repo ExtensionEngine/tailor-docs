@@ -1,13 +1,18 @@
 # Ecosystem
 
 <div align="center">
-  <img src="/" alt="Ecosystem architecture diagram placeholder"/>
+  <img :src="$withBase('/architecture.png')" alt="Architecture diagram"/>
 </div>
 
 ## Tailor
 
-<p>What is Tailor?</p>
-<p>Why was it created? (goal, purpose)</p>
+<p>
+  Tailor is a Content Management System (CMS)
+  used for creating a flexible content structure.
+</p>
+<p>
+  Why was it created? (goal, purpose)
+</p>
 
 <div align="center">
   <img src="/" alt="Internal Tailor architecture"/>
