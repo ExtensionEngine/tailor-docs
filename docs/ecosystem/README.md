@@ -11,11 +11,12 @@
   used for creating a flexible content structure.
 </p>
 <p>
-  Why was it created? (goal, purpose)
+  It is continually being improved to provide the most customizable solution,
+  while not forcing users to conform to any content-related restrictions.
 </p>
 
 <div align="center">
-  <img src="/" alt="Internal Tailor architecture"/>
+  <img :src="$withBase('/tailor.png')" alt="Internal Tailor architecture"/>
 </div>
 
 [Getting started with Tailor →](/guide-tailor/)
