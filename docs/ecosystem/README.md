@@ -83,8 +83,16 @@
 
 ## Tape
 
-<p>What is Tape?</p>
-<p>Why was it created? (goal, purpose)</p>
+<p>
+  Tape is data analytics system that collect user's content consumption data
+  from Boutique and generates new data through calculations and transformations
+  of the original data set.
+</p>
+<p>
+  It was created to assure an optimal way of calculating, transforming and
+  storing user's content consumption data for further consumption, data analysis
+  and visualization.
+</p>
 
 [Getting started with Tape →](/guide-tape/)
 
