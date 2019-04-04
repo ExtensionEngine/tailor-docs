@@ -21,13 +21,49 @@
 
 [Getting started with Tailor →](/guide-tailor/)
 
-### Course schema
+### Repository
 
-<p>What is a course schema?</p>
-<p>What does it provide?</p>
+<p>Repository is a container that gives structure to the content.</p>
+<p>To control content structure, one must provide a repository schema.</p>
+<p>Here's an example of a repository schema:</p>
 
 ``` json
-TODO: provide course schema example
+{
+  "id": "COURSE",
+  "name": "Example Course",
+  "structure": [{
+    "type": "GOAL",
+    "label": "Goal",
+    "color": "#ff6590",
+    "level": 1,
+    "meta":[{
+      "key": "description",
+      "type": "INPUT",
+      "label": "Description",
+      "placeholder": "Click to add...",
+      "validate": { "rules": { "required": false, "max": 23 } }
+    }],
+    "contentContainers": ["PAGE"],
+    "relationships": [{
+      "type": "prerequisites",
+      "label": "Prerequisites",
+      "multiple": true,
+      "searchable": true,
+      "allowEmpty": true,
+      "placeholder": "Click to select",
+      "allowCircularLinks": false,
+      "allowInsideLineage": false
+    }, {
+      "type": "replacements",
+      "label": "replacements"
+    }]
+  }],
+  "contentContainers": [{
+    "type": "PAGE",
+    "label": "Page",
+    "multiple": false
+  }]
+}
 ```
 
 ## Boutique
