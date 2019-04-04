@@ -68,8 +68,16 @@
 
 ## Boutique
 
-<p>What is Boutique?</p>
-<p>Why was it created? (goal, purpose)</p>
+<p>
+  Boutique is a headless Content Delivery Platform (CDP)
+  that consumes Tailor content and prepares it for the end user consumption.
+</p>
+<p>
+  The goal of building Boutique was to provide a custom LMS to meet our clients'
+  needs, but since Tailor can provide content that can be consumed for any
+  purpose, it grew to become a CDP that meets the customization needs of our
+  clients like custom way content elements look and behave.
+</p>
 
 [Getting started with Boutique →](/guide-boutique/)
 

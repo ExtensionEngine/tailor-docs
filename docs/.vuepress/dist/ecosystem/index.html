@@ -7,7 +7,7 @@
     <meta name="description" content="Strategy, Implementation, Support">
     <link rel="icon" href="/tailor-docs/default-logo-full.svg">
     
-    <link rel="preload" href="/tailor-docs/assets/css/0.styles.196f2d6a.css" as="style"><link rel="preload" href="/tailor-docs/assets/js/app.d769649a.js" as="script"><link rel="preload" href="/tailor-docs/assets/js/7.b1bd00c4.js" as="script"><link rel="prefetch" href="/tailor-docs/assets/js/10.91a0ead7.js"><link rel="prefetch" href="/tailor-docs/assets/js/11.98b26c6a.js"><link rel="prefetch" href="/tailor-docs/assets/js/12.fb09b48b.js"><link rel="prefetch" href="/tailor-docs/assets/js/13.5a80e777.js"><link rel="prefetch" href="/tailor-docs/assets/js/14.4e79d2de.js"><link rel="prefetch" href="/tailor-docs/assets/js/2.76904e22.js"><link rel="prefetch" href="/tailor-docs/assets/js/3.ee2e57ba.js"><link rel="prefetch" href="/tailor-docs/assets/js/4.13ee9dac.js"><link rel="prefetch" href="/tailor-docs/assets/js/5.8bbe498f.js"><link rel="prefetch" href="/tailor-docs/assets/js/6.98e0c5cb.js"><link rel="prefetch" href="/tailor-docs/assets/js/8.b0c5f5d1.js"><link rel="prefetch" href="/tailor-docs/assets/js/9.9a97dbda.js">
+    <link rel="preload" href="/tailor-docs/assets/css/0.styles.196f2d6a.css" as="style"><link rel="preload" href="/tailor-docs/assets/js/app.63a1e94a.js" as="script"><link rel="preload" href="/tailor-docs/assets/js/7.8d2196a8.js" as="script"><link rel="prefetch" href="/tailor-docs/assets/js/10.91a0ead7.js"><link rel="prefetch" href="/tailor-docs/assets/js/11.98b26c6a.js"><link rel="prefetch" href="/tailor-docs/assets/js/12.fb09b48b.js"><link rel="prefetch" href="/tailor-docs/assets/js/13.5a80e777.js"><link rel="prefetch" href="/tailor-docs/assets/js/14.4e79d2de.js"><link rel="prefetch" href="/tailor-docs/assets/js/2.76904e22.js"><link rel="prefetch" href="/tailor-docs/assets/js/3.ee2e57ba.js"><link rel="prefetch" href="/tailor-docs/assets/js/4.13ee9dac.js"><link rel="prefetch" href="/tailor-docs/assets/js/5.8bbe498f.js"><link rel="prefetch" href="/tailor-docs/assets/js/6.98e0c5cb.js"><link rel="prefetch" href="/tailor-docs/assets/js/8.b0c5f5d1.js"><link rel="prefetch" href="/tailor-docs/assets/js/9.9a97dbda.js">
     <link rel="stylesheet" href="/tailor-docs/assets/css/0.styles.196f2d6a.css">
   </head>
   <body>
@@ -29,7 +29,42 @@
 </p> <p>
   It is continually being improved to provide the most customizable solution,
   while not forcing users to conform to any content-related restrictions.
-</p> <div align="center"><img src="/tailor-docs/tailor.png" alt="Internal Tailor architecture"></div> <p><a href="/tailor-docs/guide-tailor/">Getting started with Tailor →</a></p> <h3 id="course-schema"><a href="#course-schema" aria-hidden="true" class="header-anchor">#</a> Course schema</h3> <p>What is a course schema?</p> <p>What does it provide?</p> <div class="language-json extra-class"><pre class="language-json"><code>TODO<span class="token operator">:</span> provide course schema example
+</p> <div align="center"><img src="/tailor-docs/tailor.png" alt="Internal Tailor architecture"></div> <p><a href="/tailor-docs/guide-tailor/">Getting started with Tailor →</a></p> <h3 id="repository"><a href="#repository" aria-hidden="true" class="header-anchor">#</a> Repository</h3> <p>Repository is a container that gives structure to the content.</p> <p>To control content structure, one must provide a repository schema.</p> <p>Here's an example of a repository schema:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;COURSE&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Example Course&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;structure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GOAL&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Goal&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#ff6590&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;level&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;description&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;INPUT&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;required&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">23</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;contentContainers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;PAGE&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;relationships&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prerequisites&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Prerequisites&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;multiple&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;searchable&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;allowEmpty&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to select&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;allowCircularLinks&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;allowInsideLineage&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;replacements&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;replacements&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;contentContainers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PAGE&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Page&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;multiple&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
 </code></pre></div><h2 id="boutique"><a href="#boutique" aria-hidden="true" class="header-anchor">#</a> Boutique</h2> <p>What is Boutique?</p> <p>Why was it created? (goal, purpose)</p> <p><a href="/tailor-docs/guide-boutique/">Getting started with Boutique →</a></p> <h2 id="tape"><a href="#tape" aria-hidden="true" class="header-anchor">#</a> Tape</h2> <p>What is Tape?</p> <p>Why was it created? (goal, purpose)</p> <p><a href="/tailor-docs/guide-tape/">Getting started with Tape →</a></p> <h2 id="teaching-elements"><a href="#teaching-elements" aria-hidden="true" class="header-anchor">#</a> Teaching elements</h2> <p>What is a teaching element?</p> <p>Why are they created? (goal, purpose)</p> <div align="center"><img src="/" alt="Teaching element architecture"></div> <p><a href="/tailor-docs/teaching-elements/">List of Teaching Elements →</a></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/tailor-docs/" class="prev router-link-active">
@@ -39,6 +74,6 @@
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/tailor-docs/assets/js/app.d769649a.js" defer></script><script src="/tailor-docs/assets/js/7.b1bd00c4.js" defer></script>
+    <script src="/tailor-docs/assets/js/app.63a1e94a.js" defer></script><script src="/tailor-docs/assets/js/7.8d2196a8.js" defer></script>
   </body>
 </html>
