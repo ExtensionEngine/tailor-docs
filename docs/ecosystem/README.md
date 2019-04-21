@@ -84,7 +84,7 @@
 ## Tape
 
 <p>
-  Tape is data analytics system that collect user's content consumption data
+  Tape is a data analytics system that collect user's content consumption data
   from Boutique and generates new data through calculations and transformations
   of the original data set.
 </p>
@@ -96,13 +96,28 @@
 
 [Getting started with Tape →](/guide-tape/)
 
-## Teaching elements
+## Content elements
 
-<p>What is a teaching element?</p>
-<p>Why are they created? (goal, purpose)</p>
+<p>
+  Content element is a module that provides a set of metadata that defines
+  specific content type.
+</p>
+<p>
+  Purpose of content elements is to provide a modular way of introducing new
+  content types. By having content elements as separate modules, we've made
+  sure that:
+  <ul>
+    <li>
+      <b>Content managers</b> can easily manage available content types
+    </li>
+    <li>
+      <b>Developers</b> can extend existing content types or create new ones.
+    </li>
+  </ul>
+</p>
 
 <div align="center">
-  <img src="/" alt="Teaching element architecture"/>
+  <img src="/" alt="Content element architecture"/>
 </div>
 
-[List of Teaching Elements →](/teaching-elements/)
+[List of Content Elements →](/content-elements/)

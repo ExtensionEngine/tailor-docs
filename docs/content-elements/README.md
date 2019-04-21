@@ -1,5 +1,5 @@
-# List of teaching elements
+# List of content elements
 
 | Name                         | Description       | Repository                          |
 |:----------------------------:|:-----------------:|:-----------------------------------:|
-| Name of the teaching element | Short description | [Repository](http://www.github.com) |
+| Name of the content element | Short description | [Repository](http://www.github.com) |

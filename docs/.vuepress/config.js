@@ -17,7 +17,7 @@ module.exports = {
       '/guide-tailor/tailor-configuration/',
       '/guide-boutique/',
       '/guide-tape/',
-      '/teaching-elements/',
+      '/content-elements/',
       '/content/',
       '/content/contribute/',
       '/contribute/',
