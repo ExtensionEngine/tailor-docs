@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Custom Learning Experiences',
+  title: 'Tailor docs',
   description: 'Strategy, Implementation, Support',
   head: [
     ['link', { rel: 'icon', href: '/default-logo-full.svg' }]
@@ -10,19 +10,44 @@ module.exports = {
       { text: 'Boutique', link: 'https://github.com/ExtensionEngine/boutique' },
       { text: 'Tape', link: 'https://github.com/ExtensionEngine/tape' }
     ],
-    sidebar: [
-      '/',
-      '/ecosystem/',
-      '/guide-tailor/',
-      '/guide-tailor/tailor-configuration/',
-      '/guide-boutique/',
-      '/guide-tape/',
-      '/content-elements/',
-      '/content/',
-      '/content/contribute/',
-      '/contribute/',
-      '/issues/'
-    ]
+    sidebar: [{
+      title: 'Tailor',
+      children: [
+        '/tailor/intro',
+        '/tailor/concepts',
+        {
+          title: 'User guide',
+          collapsable: false,
+          children: [
+            '/tailor/user-guide/catalog',
+            '/tailor/user-guide/repository',
+            '/tailor/user-guide/editor',
+            '/tailor/user-guide/collaboration',
+            '/tailor/user-guide/admin',
+            '/tailor/user-guide/profile'
+          ]
+        },
+        {
+          title: 'Developer guide',
+          collapsable: false,
+          children: [
+            '/tailor/developer-guide/instalation',
+            '/tailor/developer-guide/configuration',
+            {
+              title: 'Extensions',
+              children: [
+                ['/tailor/developer-guide/extensions/containers', 'Containers'],
+                ['/tailor/developer-guide/extensions/elements', 'Content Elements'],
+                ['/tailor/developer-guide/extensions/metas', 'Meta Inputs'],    
+              ]
+            },
+            '/tailor/developer-guide/sso',
+            '/tailor/developer-guide/hooks',
+            '/tailor/developer-guide/branding',
+          ]
+        }
+      ]
+    }]
   },
   configureWebpack: {
     resolve: {
