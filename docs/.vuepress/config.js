@@ -36,9 +36,9 @@ module.exports = {
             {
               title: 'Extensions',
               children: [
-                ['/tailor/developer-guide/extensions/containers', 'Containers'],
-                ['/tailor/developer-guide/extensions/elements', 'Content Elements'],
-                ['/tailor/developer-guide/extensions/metas', 'Meta Inputs'],    
+                '/tailor/developer-guide/extensions/containers',
+                '/tailor/developer-guide/extensions/elements',
+                '/tailor/developer-guide/extensions/metas',
               ]
             },
             '/tailor/developer-guide/sso',
