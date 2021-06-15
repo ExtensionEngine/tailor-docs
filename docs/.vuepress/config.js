@@ -31,7 +31,7 @@ module.exports = {
           title: 'Developer guide',
           collapsable: false,
           children: [
-            '/tailor/developer-guide/instalation',
+            '/tailor/developer-guide/installation',
             '/tailor/developer-guide/configuration',
             {
               title: 'Extensions',
