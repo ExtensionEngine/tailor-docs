@@ -33,6 +33,7 @@ module.exports = {
           children: [
             '/tailor/developer-guide/installation',
             '/tailor/developer-guide/configuration',
+            '/tailor/developer-guide/publishing',
             {
               title: 'Extensions',
               children: [
