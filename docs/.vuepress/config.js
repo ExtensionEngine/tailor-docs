@@ -37,9 +37,11 @@ module.exports = {
             {
               title: 'Extensions',
               children: [
-                '/tailor/developer-guide/extensions/containers',
+                '/tailor/developer-guide/extensions/introduction',
                 '/tailor/developer-guide/extensions/elements',
+                '/tailor/developer-guide/extensions/containers',
                 '/tailor/developer-guide/extensions/metas',
+                '/tailor/developer-guide/extensions/utils'
               ]
             },
             '/tailor/developer-guide/sso',
@@ -50,13 +52,6 @@ module.exports = {
         }
       ]
     }]
-  },
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@img': 'images/'
-      }
-    }
   },
   base: '/tailor-docs/'
 }
