@@ -31,7 +31,8 @@ $ TAILOR_CONFIG=path/to/custom/tailor/config.js npm run dev:server
 
 ## Repository structure
 
-This section explains how to configure the general course structure. That includes creating all used activity types (Goals, Learning Objectives, Practice Exercises, etc.), setting up their relation to one another, as well as what type of content will each activity contain (Introduction, Perspective, Assessments, Exams, etc.) and various activity meta data. 
+This section explains how to configure the general course structure. That includes creating all used activity types (Goals, Learning Objectives, Practice Exercises, etc.), setting up their relation to one another, as well as what type of content will each activity contain (Introduction, Perspective, Assessments, Exams, etc.) and various activity meta data.
+
 ### Code example
 
 ``` json
@@ -525,7 +526,7 @@ Add image
 
 ## Relationships
 
-The following page explains how to configure relationships between structure types. These are defined within the scope of a structure type within `.activities-rc.json`.
+The following section explains how to configure relationships between structure types. These are defined within the scope of a structure type within `.activities-rc.json`.
 
 ### Code example
 
@@ -581,3 +582,67 @@ elementMeta: [{
   }]
 }
 ```
+
+## Workflow
+
+The following section explains how to configure a workflow. Workflows are defined outside of schemas and are assigned to a schema by adding a `worfklowId` to a schema's definition.
+
+### Code example
+
+``` javascript
+ const DEMO_WORKFLOW = {
+  id: 'DEMO_WORKFLOW',
+  statuses: [
+    { id: 'TODO', label: 'Todo', default: true, color: '#E91E63' },
+    { id: 'IN_PROGRESS', label: 'In progress', color: '#039BE5' },
+    { id: 'REVIEW', label: 'Review', color: '#00BFA5' },
+    { id: 'DONE', label: 'Done', color: '#00BFA5'  }
+  ]
+};
+
+const MODULE = {
+  type: 'MODULE',
+  rootLevel: true,
+  isTrackedInWorkflow: true,
+  label: 'Module',
+  color: '#5187C7',
+  subLevels: ['MODULE', 'LESSON']
+};
+  
+const LESSON = {
+  type: 'LESSON',
+  isTrackedInWorkflow: true,
+  label: 'Lesson',
+  color: '#08A9AD',
+  contentContainers: ['PAGE']
+};
+
+const DEMO_SCHEMA = {
+  id: 'DEMO_SCHEMA',
+  workflowId: DEMO_WORKFLOW.id,
+  name: 'Demo course',
+  structure: [MODULE, LESSON],
+};
+  
+module.exports = {
+  SCHEMAS: [DEMO_SCHEMA],
+  WORKFLOWS: [DEMO_WORKFLOW]
+};
+```
+
+### Workflow properties
+
+|Property|Description|Type|
+|--------|------------|--------|
+|id|Workflow identifier.|String|
+|statuses|An array of possible activity statuses.|Array\<ActivityStatus\>|
+|dueDateWarningThreshold|Defines threshold (in days, weeks or months) relative to activity's due date, after which the warning of upcoming due date is displayed.|Object|
+
+### Activity Status properties
+
+|Property|Description|Type|
+|--------|------------|--------|
+|id|Activity status identifier.|String|
+|label|Display label.|String|
+|color|Display color.|String|
+|default|Defines that the status is the default, which the activity has when it's created.|Boolean|
