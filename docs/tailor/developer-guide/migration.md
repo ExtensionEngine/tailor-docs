@@ -32,7 +32,7 @@ module.exports = {
 In order to use workflow for a particular *schema*, you need to define statuses and *activity* types you wish to track. Here is an example of a simple workflow definition:
 
 ::: tip
-Optional, if you wish to use this functionality
+This is an optional functionality.
 :::
 
 ``` js
@@ -100,7 +100,7 @@ Set `AUTH_JWT_COOKIE_NAME` and `AUTH_JWT_COOKIE_SECRET` (see [`.env.example`](ht
 ## Setup SSO
 
 ::: tip
-Optional, if you wish to use this functionality
+This is an optional functionality.
 :::
 
 For a detailed configuration guide, please visit [the SSO setup guide](./sso.md#setup).
@@ -108,7 +108,7 @@ For a detailed configuration guide, please visit [the SSO setup guide](./sso.md#
 ## Setup publish webhooks
 
 ::: tip
-Optional, if you wish to use this functionality
+This is an optional functionality.
 :::
 
 For a detailed configuration guide, please visit [the publish webhooks guide](./publishing.md#webhooks).
