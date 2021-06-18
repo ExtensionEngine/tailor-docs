@@ -58,5 +58,10 @@ function hook(element, { config }) {
 }
 ```
 
-
 Notice that the `TCE_` prefix is dropped and the environment variable name is converted to camelCase.
+
+## Examples
+
+::: tip TODO
+Add a basic example
+:::

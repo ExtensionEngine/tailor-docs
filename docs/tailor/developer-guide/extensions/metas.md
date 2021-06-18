@@ -28,3 +28,9 @@ For Tailor to use any custom meta input, add the name of the folder that contain
 ``` js
 module.exports = ['<name-of-folder-given-to-degit>'];
 ```
+
+## Examples
+
+::: tip TODO
+Add a basic example
+:::

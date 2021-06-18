@@ -22,10 +22,6 @@ The file used by Tailor's front-end build process to include the container. This
 #### `info.js`
 The file that contains basic information about this container which can be useful to the front-end and the back-end. This file does not need to exist but then its contents need to be found in any file that needs them (`index.js` and `server/index.js` in this template use it).
 
-::: warning TODO
-Add description of templating using the `templateId`
-:::
-
 #### `server/index.js`
 The file that holds the server logic. It does not need to exist. The server logic covers the following:
 * custom publishing structure (any custom container can have a unique structure of the published JSON document),
@@ -47,3 +43,9 @@ For Tailor to use any custom container, add the name of the folder that contains
 ```js
 module.exports = ['<name-of-folder-given-to-degit>'];
 ```
+
+## Examples
+
+::: tip TODO
+Add a basic example
+:::
