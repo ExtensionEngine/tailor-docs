@@ -16,8 +16,8 @@ To enable SSO via OIDC:
 
 Login is achieved using [OpenID Connect Authorization Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth) which is the safest approach to login since it uses a combination of:
 
-* front-channel; to allow users to be able to log in and give consent 
-* back-channel; for user data transfer.
+* front-channel - to allow users to be able to log in and give consent,
+* back-channel - for user data transfer.
 
 Logout uses [OpenID Connect RP Initiate Logout Flow](https://openid.net/specs/openid-connect-rpinitiated-1_0.html#RPLogout).
 To enable SSO you need to add the appropriate configuration to Talor’s `.env` file and to your IdP of choice.
