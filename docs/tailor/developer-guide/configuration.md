@@ -31,134 +31,181 @@ $ TAILOR_CONFIG=path/to/custom/tailor/config.js npm run dev:server
 
 ## Repository structure
 
-Thi section explains how to configure the general course structure. That includes creating all used activity types (Goals, Learning Objectives, Practice Exercises, etc.), setting up their relation to one another, as well as what type of content will each activity contain (Introduction, Perspective, Assessments, Exams, etc.) and various activity meta data. 
+This section explains how to configure the general course structure. That includes creating all used activity types (Goals, Learning Objectives, Practice Exercises, etc.), setting up their relation to one another, as well as what type of content will each activity contain (Introduction, Perspective, Assessments, Exams, etc.) and various activity meta data. 
 ### Code example
 
 ``` json
 {
-  "SCHEMAS": [{
-    "id": "COURSE",
-    "name": "Example schema",
-    "contentContainers": [{
-      "type": "INTRO",
-      "label": "Introduction",
-      "types": ["HTML", "AUDIO", "VIDEO", "EMBED"],
-      "displayHeading": true
-    }, {
-      "type": "PERSPECTIVE",
-      "label": "Content",
-      "multiple": true,
-      "displayHeading": true,
-      "layout": true
-    }],
-    "structure": [{
-      "rootLevel": true,
-      "type": "GOAL",
-      "subLevels": ["OBJECTIVE", "INTERACTIVE_EXERCISE"],
-      "label": "Goal",
-      "color": "#42A5F5",
-      "contentContainers": ["INTRO"],
-      "meta": [{
-        "key": "inputKey",
-        "type": "INPUT",
-        "label": "Name",
-        "placeholder": "Click to add...",
-        "validate": { "rules": { "max": 250 } }
-      }, {
-        "key": "textareaKey",
-        "type": "TEXTAREA",
-        "label": "Description",
-        "placeholder": "Click to add...",
-        "validate": {
-          "rules": {
-            "max": 250
-          }
+  "SCHEMAS": [
+    {
+      "id": "COURSE",
+      "name": "Example schema",
+      "contentContainers": [
+        {
+          "type": "INTRO",
+          "label": "Introduction",
+          "types": [
+            "HTML",
+            "AUDIO",
+            "VIDEO",
+            "EMBED"
+          ],
+          "displayHeading": true
+        },
+        {
+          "type": "PERSPECTIVE",
+          "label": "Content",
+          "multiple": true,
+          "displayHeading": true,
+          "layout": true
         }
-      }, {
-        "key": "checkboxKey",
-        "type": "CHECKBOX",
-        "label": "Generic checkbox label",
-        "description": "Description for a checkbox"
-      }, {
-        "key": "switchKey",
-        "type": "SWITCH",
-        "label": "Generic switch label",
-        "description": "Description for a switch"
-      }, {
-        "key": "colorKey",
-        "type": "COLOR",
-        "label": "Pick a color"
-      }, {
-        "key": "duration",
-        "type": "SELECT",
-        "label": "Select From List",
-        "placeholder": "Select...",
-        "options": [{
-          "label": "selection 1",
-          "value": 5
-        }, {
-          "label": "selection 2",
-          "value": 10
-        }, {
-          "label": "selection 3",
-          "value": 15
-        }]
-      }, {
-        "key": "datePicker",
-        "type": "DATETIME",
-        "label": "date picker"
-      }]
-    }, {
-      "type": "OBJECTIVE",
-      "subLevels": ["TOPIC"],
-      "label": "Learning Objective",
-      "color": "#66BB6A",
-      "contentContainers": [],
-      "meta": [{
-        "key": "description",
-        "type": "TEXTAREA",
-        "label": "Description",
-        "placeholder": "Click to add...",
-        "validate": {
-          "rules": {
-            "required": false,
-            "max": 250
-          }
+      ],
+      "structure": [
+        {
+          "rootLevel": true,
+          "type": "GOAL",
+          "subLevels": [
+            "OBJECTIVE",
+            "INTERACTIVE_EXERCISE"
+          ],
+          "label": "Goal",
+          "color": "#42A5F5",
+          "contentContainers": [
+            "INTRO"
+          ],
+          "meta": [
+            {
+              "key": "inputKey",
+              "type": "INPUT",
+              "label": "Name",
+              "placeholder": "Click to add...",
+              "validate": {
+                "rules": {
+                  "max": 250
+                }
+              }
+            },
+            {
+              "key": "textareaKey",
+              "type": "TEXTAREA",
+              "label": "Description",
+              "placeholder": "Click to add...",
+              "validate": {
+                "rules": {
+                  "max": 250
+                }
+              }
+            },
+            {
+              "key": "checkboxKey",
+              "type": "CHECKBOX",
+              "label": "Generic checkbox label",
+              "description": "Description for a checkbox"
+            },
+            {
+              "key": "switchKey",
+              "type": "SWITCH",
+              "label": "Generic switch label",
+              "description": "Description for a switch"
+            },
+            {
+              "key": "colorKey",
+              "type": "COLOR",
+              "label": "Pick a color"
+            },
+            {
+              "key": "duration",
+              "type": "SELECT",
+              "label": "Select From List",
+              "placeholder": "Select...",
+              "options": [
+                {
+                  "label": "selection 1",
+                  "value": 5
+                },
+                {
+                  "label": "selection 2",
+                  "value": 10
+                },
+                {
+                  "label": "selection 3",
+                  "value": 15
+                }
+              ]
+            },
+            {
+              "key": "datePicker",
+              "type": "DATETIME",
+              "label": "date picker"
+            }
+          ]
+        },
+        {
+          "type": "OBJECTIVE",
+          "subLevels": [
+            "TOPIC"
+          ],
+          "label": "Learning Objective",
+          "color": "#66BB6A",
+          "contentContainers": [],
+          "meta": [
+            {
+              "key": "description",
+              "type": "TEXTAREA",
+              "label": "Description",
+              "placeholder": "Click to add...",
+              "validate": {
+                "rules": {
+                  "required": false,
+                  "max": 250
+                }
+              }
+            },
+            {
+              "key": "inactive",
+              "type": "SWITCH",
+              "label": "Inactive"
+            }
+          ]
+        },
+        {
+          "type": "TOPIC",
+          "label": "Topic",
+          "color": "#EC407A",
+          "isObjective": true,
+          "contentContainers": [
+            "PERSPECTIVE"
+          ],
+          "meta": [
+            {
+              "key": "description",
+              "type": "TEXTAREA",
+              "label": "Description",
+              "placeholder": "Click to add...",
+              "validate": {
+                "rules": {
+                  "required": false,
+                  "max": 250
+                }
+              }
+            }
+          ],
+          "relationships": [
+            {
+              "type": "prerequisites",
+              "label": "Prerequisites",
+              "placeholder": "Select prerequisites"
+            },
+            {
+              "type": "replacements",
+              "label": "Replacements",
+              "placeholder": "Select replacements"
+            }
+          ]
         }
-      }, {
-        "key": "inactive",
-        "type": "SWITCH",
-        "label": "Inactive"
-      }]
-    }, {
-      "type": "TOPIC",
-      "label": "Topic",
-      "color": "#EC407A",
-      "isObjective": true,
-      "contentContainers": ["PERSPECTIVE"],
-      "meta": [{
-        "key": "description",
-        "type": "TEXTAREA",
-        "label": "Description",
-        "placeholder": "Click to add...",
-        "validate": {
-          "rules": {
-            "required": false,
-            "max": 250
-          }
-        }
-      }],
-      "relationships": [{
-        "type": "prerequisites",
-        "label": "Prerequisites",
-        "placeholder": "Select prerequisites"
-       }, {
-        "type": "replacements",
-        "label": "Replacements",
-        "placeholder": "Select replacements"
-       }]
-    }]
-  }]
+      ]
+    }
+  ]
 }
 ```
 
@@ -183,14 +230,27 @@ The following sections explains how to configure content containers. Each type c
 
 ``` json
 "contentContainers": [{
-    "type": "PERSPECTIVE",
-    "label": "Perspective",
-    "types": ["HTML", "IMAGE", "VIDEO", "ASSESSMENT", "EMBED", "BREAK", "ACCORDION", "CAROUSEL", "MODAL", "TABLE", "PDF", "AUDIO"],
-    "displayHeading": true,
-    "multiple": true,
-    "min": 1,
-    "max": 3,
-    "layout": true
+  "type": "PERSPECTIVE",
+  "label": "Perspective",
+  "types": [
+    "HTML",
+    "IMAGE",
+    "VIDEO",
+    "ASSESSMENT",
+    "EMBED",
+    "BREAK",
+    "ACCORDION",
+    "CAROUSEL",
+    "MODAL",
+    "TABLE",
+    "PDF",
+    "AUDIO"
+  ],
+  "displayHeading": true,
+  "multiple": true,
+  "min": 1,
+  "max": 3,
+  "layout": true
 }]
 ```
 ### Content container properties
@@ -201,13 +261,13 @@ The following sections explains how to configure content containers. Each type c
 |templateId|`const-cased` string that defines which custom `ContentContainer` is used to display this container. Needs to match the `templateId` property of the desired custom `ContentContainer`. If not specified the default `ContentContainer` is used to display this container.|String|
 |label|String used for referencing `ContentContainer` on the UI.|String|
 |multiple|Defines if there can be multiple instances of the `ContentContainer` inside a single `Activity`. False by default.|Boolean|
-|min|Defines minimum number of a given content container allowed within an activity.** Those will be auto-created.|Number|
-|max|Defines the maximum number of a given content container allowed within an activity.** Must be greater or equal to min.|Number|
+|min|Defines minimum number of a given content container allowed within an activity. Those will be auto-created.|Number|
+|max|Defines the maximum number of a given content container allowed within an activity. Must be greater or equal to min.|Number|
 |types|An array of possible elements for the content container type. If not specified, all types of elements are allowed. All currently available types are displayed in the code example above.|Array`<String>`|
 |displayHeading|Defines if the heading is displayed on the top of the content container. False by default.|Boolean|
 |layout|Defines if elements inside the container can be displayed in two rows. False by default.|Boolean|
 |config|Defines `ContentContainer` specific properties.|Object|
-|required"|`Boolean` - Defines if an instance of the `ContentContainer` is created if non exist. True by default.|Boolean|
+|required|Defines if an instance of the `ContentContainer` is created if non exist. True by default.|Boolean|
 |publishedAs|Defines the name of the file under which the container will be published. Defaults to `container`. The name of the structure component used is the `kebab-cased` version of the `type` property. (example: ABC_DEF -> abc-def)|String
 
 ## Activity metadata
@@ -220,11 +280,16 @@ Code needs to be added in `.activities-rc.json` file, inside of the `OUTLINE_LEV
 
 ``` json
 meta: [{
-    "key": "inputKey",
-    "type": "INPUT",
-    "label": "Input field",
-    "placeholder": "Click to add...",
-    "validate": { "rules": { "required": false, "max": 250 } }
+  "key": "inputKey",
+  "type": "INPUT",
+  "label": "Input field",
+  "placeholder": "Click to add...",
+  "validate": {
+    "rules": {
+      "required": false,
+      "max": 250  
+    }
+  }
 }]
 ```
 #### Preview
@@ -239,11 +304,16 @@ Add image
 
 ``` json
 meta: [{
-    "key": "textareaKey",
-    "type": "TEXTAREA",
-    "label": "Description",
-    "placeholder": "Click to add...",
-    "validate": { "rules": { "required": false, "max": 250 } }
+  "key": "textareaKey",
+  "type": "TEXTAREA",
+  "label": "Description",
+  "placeholder": "Click to add...",
+  "validate": {
+    "rules": {
+      "required": false,
+      "max": 250
+    }
+  }
 }]
 ```
 
@@ -259,11 +329,16 @@ Add image
 
 ``` json
 meta: [{
-    "key": "textareaKey",
-    "type": "TEXTAREA",
-    "label": "Description",
-    "placeholder": "Click to add...",
-    "validate": { "rules": { "required": false, "max": 250 } }
+  "key": "textareaKey",
+  "type": "TEXTAREA",
+  "label": "Description",
+  "placeholder": "Click to add...",
+  "validate": {
+    "rules": {
+      "required": false,
+      "max": 250
+    }
+  }
 }]
 ```
 
@@ -279,11 +354,16 @@ Add image
 
 ``` json
 meta: [{
-    "key": "textareaKey",
-    "type": "TEXTAREA",
-    "label": "Description",
-    "placeholder": "Click to add...",
-    "validate": { "rules": { "required": false, "max": 250 } }
+  "key": "textareaKey",
+  "type": "TEXTAREA",
+  "label": "Description",
+  "placeholder": "Click to add...",
+  "validate": {
+    "rules": {
+      "required": false,
+      "max": 250
+    }
+  }
 }]
 ```
 
@@ -299,9 +379,9 @@ Add image
 
 ``` json
 meta: [{
-    "key": "colorKey",
-    "type": "COLOR",
-    "label": "Pick a color"
+  "key": "colorKey",
+  "type": "COLOR",
+  "label": "Pick a color"
 }]
 ```
 
@@ -317,19 +397,19 @@ Add image
 
 ``` json
 meta: [{
-    "key": "selectKey",
-    "type": "SELECT",
-    "label": "Select From List"
-    "options": [{
-      "label": "selection 1",
-      "value": 5
-    }, {
-      "label": "selection 2",
-      "value": 10
-    }, {
-      "label": "selection 3",
-      "value": 15
-    }]
+  "key": "selectKey",
+  "type": "SELECT",
+  "label": "Select From List",
+  "options": [{
+    "label": "selection 1",
+    "value": 5
+  }, {
+    "label": "selection 2",
+    "value": 10
+  }, {
+    "label": "selection 3",
+    "value": 15
+  }]
 }]
 ```
 
@@ -374,9 +454,9 @@ Add image
 
 ``` json
 meta: [{
-    "key": "datePicker",
-    "type": "DATETIME",
-    "label": "date picker"
+  "key": "datePicker",
+  "type": "DATETIME",
+  "label": "date picker"
 }]
 ```
 
@@ -392,9 +472,9 @@ Add image
 
 ``` json
 meta: [{
-    "key": "html",
-    "type": "HTML",
-    "label": "html with quill"
+  "key": "html",
+  "type": "HTML",
+  "label": "html with quill"
 }]
 ```
 
@@ -410,30 +490,30 @@ Add image
 
 ``` json
 meta: [{
-    "key": "file",
-    "type": "FILE",
-    "label": "File Upload",
-    "placeholder": "Click to add...",
-    "validate": {
-        "rules": {
-            "ext": [
-                "pdf",
-                "xlsx",
-                "mp3",
-                "ogg",
-                "wma",
-                "rar",
-                "tar.gz",
-                "7z",
-                "zip",
-                "jpg",
-                "jpeg",
-                "png",
-                "xml",
-                "tar"
-            ]
-        }
+  "key": "file",
+  "type": "FILE",
+  "label": "File Upload",
+  "placeholder": "Click to add...",
+  "validate": {
+    "rules": {
+      "ext": [
+        "pdf",
+        "xlsx",
+        "mp3",
+        "ogg",
+        "wma",
+        "rar",
+        "tar.gz",
+        "7z",
+        "zip",
+        "jpg",
+        "jpeg",
+        "png",
+        "xml",
+        "tar"
+      ]
     }
+  }
 }]
 ```
 
@@ -451,14 +531,14 @@ The following page explains how to configure relationships between structure typ
 
 ``` json
 "relationships": [{
-    "type": "prerequisites",
-    "label": "prerequisites",
-    "placeholder": "Select prerequisites",
-    "multiple": true,
-    "searchable": true,
-    "allowEmpty": true,
-    "allowCircularLinks": true,
-    "allowInsideLineage": true
+  "type": "prerequisites",
+  "label": "prerequisites",
+  "placeholder": "Select prerequisites",
+  "multiple": true,
+  "searchable": true,
+  "allowEmpty": true,
+  "allowCircularLinks": true,
+  "allowInsideLineage": true
 }]
 ```
 
