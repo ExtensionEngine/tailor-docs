@@ -561,7 +561,7 @@ Configurable inputs may be added to a content element by specifying the content 
 
 ### Code example
 
-```javascript
+``` javascript
 elementMeta: [{
   type: 'VIDEO',
   inputs: [{
