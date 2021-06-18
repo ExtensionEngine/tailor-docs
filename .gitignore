@@ -1,2 +1,17 @@
-node_modules
 docs/.vuepress/dist
+
+# Dependencies
+node_modules
+
+# Editors
+.vscode
+*.sublime-*
+.idea
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# General
+.DS_Store

@@ -45,7 +45,7 @@ module.exports = {
               ]
             },
             '/tailor/developer-guide/sso',
-            '/tailor/developer-guide/hooks',
+            '/tailor/developer-guide/storage-proxy',
             '/tailor/developer-guide/branding',
             '/tailor/developer-guide/migration'
           ]
