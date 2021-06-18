@@ -71,7 +71,7 @@ Add image of catalog
 ]
 ```
 
-*Notice that "Course with no published elements" is not listed in "index.json". That's because none of its element are yet published. Once any element in the course gets published (Goal, Interactive Exercise, Topic, etc.), that course is added to the "index.json" in the "repository" folder
+*Notice that "Course with no published elements" is not listed in "index.json". That's because none of its element are yet published. Once any element in the course gets published (Goal, Interactive Exercise, Topic, etc.), that course is added to the "index.json" in the "repository" folder.
 
 ## content_repository_ID > index.json
 
