@@ -4,6 +4,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/default-logo-full.svg' }]
   ],
+  theme: 'default-prefers-color-scheme',
   themeConfig: {
     nav: [
       { text: 'Tailor', link: 'https://github.com/ExtensionEngine/tailor' },

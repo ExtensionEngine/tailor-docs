@@ -25,5 +25,8 @@
   "homepage": "https://github.com/ExtensionEngine/tailor-docs#readme",
   "devDependencies": {
     "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
   }
 }
