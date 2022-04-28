@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Configuration | Tailor docs</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/tailor-docs/default-logo-full.svg">
+    <meta name="description" content="Strategy, Implementation, Support">
+    
+    <link rel="preload" href="/tailor-docs/assets/css/0.styles.cf550fb0.css" as="style"><link rel="preload" href="/tailor-docs/assets/js/app.b077ca12.js" as="script"><link rel="preload" href="/tailor-docs/assets/js/2.14e4ed1d.js" as="script"><link rel="preload" href="/tailor-docs/assets/js/14.78819804.js" as="script"><link rel="prefetch" href="/tailor-docs/assets/js/10.a76addd2.js"><link rel="prefetch" href="/tailor-docs/assets/js/11.1f22d665.js"><link rel="prefetch" href="/tailor-docs/assets/js/12.c2c073a2.js"><link rel="prefetch" href="/tailor-docs/assets/js/13.8704064a.js"><link rel="prefetch" href="/tailor-docs/assets/js/15.9a76c7b2.js"><link rel="prefetch" href="/tailor-docs/assets/js/16.596938b1.js"><link rel="prefetch" href="/tailor-docs/assets/js/17.4c731d80.js"><link rel="prefetch" href="/tailor-docs/assets/js/18.04be7bca.js"><link rel="prefetch" href="/tailor-docs/assets/js/19.f9782b4e.js"><link rel="prefetch" href="/tailor-docs/assets/js/20.78db91e3.js"><link rel="prefetch" href="/tailor-docs/assets/js/21.631f2ad3.js"><link rel="prefetch" href="/tailor-docs/assets/js/22.ce6b5d9d.js"><link rel="prefetch" href="/tailor-docs/assets/js/23.08290157.js"><link rel="prefetch" href="/tailor-docs/assets/js/24.ca9944a0.js"><link rel="prefetch" href="/tailor-docs/assets/js/25.8fbffa19.js"><link rel="prefetch" href="/tailor-docs/assets/js/26.5778a156.js"><link rel="prefetch" href="/tailor-docs/assets/js/27.63339f61.js"><link rel="prefetch" href="/tailor-docs/assets/js/3.ea69ca97.js"><link rel="prefetch" href="/tailor-docs/assets/js/4.97f5c5a5.js"><link rel="prefetch" href="/tailor-docs/assets/js/5.02c482ae.js"><link rel="prefetch" href="/tailor-docs/assets/js/6.a9cef0fd.js"><link rel="prefetch" href="/tailor-docs/assets/js/7.dfbca1a7.js"><link rel="prefetch" href="/tailor-docs/assets/js/8.de4bf59d.js"><link rel="prefetch" href="/tailor-docs/assets/js/9.7b185e39.js">
+    <link rel="stylesheet" href="/tailor-docs/assets/css/0.styles.cf550fb0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/tailor-docs/" class="home-link router-link-active"><!----> <span class="site-name">Tailor docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/ExtensionEngine/tailor" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Tailor
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/ExtensionEngine/boutique" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Boutique
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/ExtensionEngine/tape" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Tape
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/ExtensionEngine/tailor" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Tailor
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/ExtensionEngine/boutique" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Boutique
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/ExtensionEngine/tape" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Tape
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Tailor</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tailor-docs/tailor/intro.html" class="sidebar-link">Introduction</a></li><li><a href="/tailor-docs/tailor/concepts.html" class="sidebar-link">Concepts</a></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>User guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tailor-docs/tailor/user-guide/catalog.html" class="sidebar-link">Catalog</a></li><li><a href="/tailor-docs/tailor/user-guide/repository.html" class="sidebar-link">Repository</a></li><li><a href="/tailor-docs/tailor/user-guide/editor.html" class="sidebar-link">Editor</a></li><li><a href="/tailor-docs/tailor/user-guide/collaboration.html" class="sidebar-link">Collaboration</a></li><li><a href="/tailor-docs/tailor/user-guide/admin.html" class="sidebar-link">Admin</a></li><li><a href="/tailor-docs/tailor/user-guide/profile.html" class="sidebar-link">User profile</a></li></ul></section></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading open"><span>Developer guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tailor-docs/tailor/developer-guide/getting-started.html" class="sidebar-link">Getting Started</a></li><li><a href="/tailor-docs/tailor/developer-guide/configuration.html" aria-current="page" class="active sidebar-link">Configuration</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tailor-docs/tailor/developer-guide/configuration.html#repository-structure" class="sidebar-link">Repository structure</a></li><li class="sidebar-sub-header"><a href="/tailor-docs/tailor/developer-guide/configuration.html#content-containers" class="sidebar-link">Content containers</a></li><li class="sidebar-sub-header"><a href="/tailor-docs/tailor/developer-guide/configuration.html#activity-metadata" class="sidebar-link">Activity metadata</a></li><li class="sidebar-sub-header"><a href="/tailor-docs/tailor/developer-guide/configuration.html#relationships" class="sidebar-link">Relationships</a></li><li class="sidebar-sub-header"><a href="/tailor-docs/tailor/developer-guide/configuration.html#element-metadata" class="sidebar-link">Element metadata</a></li><li class="sidebar-sub-header"><a href="/tailor-docs/tailor/developer-guide/configuration.html#workflow" class="sidebar-link">Workflow</a></li></ul></li><li><a href="/tailor-docs/tailor/developer-guide/publishing.html" class="sidebar-link">Publishing</a></li><li><section class="sidebar-group collapsable is-sub-group depth-2"><p class="sidebar-heading"><span>Extensions</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/tailor-docs/tailor/developer-guide/sso.html" class="sidebar-link">SSO</a></li><li><a href="/tailor-docs/tailor/developer-guide/storage-proxy.html" class="sidebar-link">Storage Proxy</a></li><li><a href="/tailor-docs/tailor/developer-guide/branding.html" class="sidebar-link">Branding</a></li><li><a href="/tailor-docs/tailor/developer-guide/migration.html" class="sidebar-link">Migration from v4</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="configuration"><a href="#configuration" class="header-anchor">#</a> Configuration</h1> <p>Repository structure can be altered using tailor configuration file. Recognized
+configuration filenames are (sorted by priority):</p> <ul><li><code>tailor.config.js</code></li> <li><code>.tailorrc.js</code></li> <li><code>.tailorrc</code></li> <li><code>.tailorrc.json</code></li></ul> <p>Use the <code>tailor.config.js.example</code> file as a template:</p> <div class="language- extra-class"><pre class="language-text"><code>$ cp tailor.config.js.example tailor.config.js
+</code></pre></div><p>and enter the configuration details. By default, the configuration file is
+searched inside the current working directory. If a custom location or a custom
+name is needed, it can be provided through the <code>--config</code> flag passed to target
+npm script:</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">npm</span> run dev:client -- --config<span class="token operator">=</span>path/to/custom/tailor/config.js
+</code></pre></div><p>alternatively <code>TAILOR_CONFIG</code> environment variable can be used:</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token assign-left variable">TAILOR_CONFIG</span><span class="token operator">=</span>path/to/custom/tailor/config.js <span class="token function">npm</span> run dev:server
+</code></pre></div><h2 id="repository-structure"><a href="#repository-structure" class="header-anchor">#</a> Repository structure</h2> <p>This section explains how to configure the general course structure. That includes creating all used activity types (Goals, Learning Objectives, Practice Exercises, etc.), setting up their relation to one another, as well as what type of content will each activity contain (Introduction, Perspective, Assessments, Exams, etc.) and various activity meta data.</p> <h3 id="code-example"><a href="#code-example" class="header-anchor">#</a> Code example</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;SCHEMAS&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;COURSE&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Example schema&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;contentContainers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;INTRO&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Introduction&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;HTML&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;AUDIO&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;VIDEO&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;EMBED&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;displayHeading&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PERSPECTIVE&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Content&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;multiple&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;displayHeading&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layout&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;structure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;rootLevel&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GOAL&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;subLevels&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;OBJECTIVE&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;INTERACTIVE_EXERCISE&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Goal&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#42A5F5&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;contentContainers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;INTRO&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;inputKey&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;INPUT&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Name&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                  <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">250</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;textareaKey&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TEXTAREA&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                  <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">250</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;checkboxKey&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CHECKBOX&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generic checkbox label&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description for a checkbox&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;switchKey&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SWITCH&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Generic switch label&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description for a switch&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;colorKey&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;COLOR&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Pick a color&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;duration&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SELECT&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Select From List&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Select...&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;options&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;selection 1&quot;</span><span class="token punctuation">,</span>
+                  <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;selection 2&quot;</span><span class="token punctuation">,</span>
+                  <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">10</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;selection 3&quot;</span><span class="token punctuation">,</span>
+                  <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">15</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;datePicker&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DATETIME&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;date picker&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OBJECTIVE&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;subLevels&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;TOPIC&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Learning Objective&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#66BB6A&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;contentContainers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;description&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TEXTAREA&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                  <span class="token property">&quot;required&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                  <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">250</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;inactive&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SWITCH&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Inactive&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TOPIC&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Topic&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#EC407A&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;isObjective&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;contentContainers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;PERSPECTIVE&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;meta&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;description&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TEXTAREA&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                  <span class="token property">&quot;required&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                  <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">250</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;relationships&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prerequisites&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Prerequisites&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Select prerequisites&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;replacements&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Replacements&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Select replacements&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="outline-levels-properties"><a href="#outline-levels-properties" class="header-anchor">#</a> OUTLINE_LEVELS properties</h3> <table><thead><tr><th>Property</th> <th>Description</th> <th>Values</th></tr></thead> <tbody><tr><td>rootLevel</td> <td>Defines the activity can be added without a parent level (a root activity)</td> <td>Boolean</td></tr> <tr><td>type</td> <td>Defines the type of the Activity</td> <td>'GOAL', 'OBJECTIVE', 'INTERACTIVE_EXERCISE', 'TOPIC' or any other available activity type</td></tr> <tr><td>subLevels</td> <td>Defines which activities are sub-levels for the current activity.<br>IMPORTANT: Level property for all sub-activities has to be current_activity.level + 1<br>Example: If 'GOAL' has level set to 1, and 'OBJECTIVE' is a sublevel of 'GOAL', then 'OBJECTIVE' level has to be set to 2. Entering the wrong subLevel value may cause issues with the course structure.</td> <td>Array containing 'GOAL', 'OBJECTIVE', 'INTERACTIVE_EXERCISE', 'TOPIC' or any other available activity type</td></tr> <tr><td>label</td> <td>Label for the currently selected activity</td> <td>String</td></tr> <tr><td>color</td> <td>Color for the background on the activity ordinal number</td> <td>HEX, RGB, color name,...</td></tr> <tr><td>meta</td> <td>Used to add metadata to the activity (visible from the activity sidebar). More details on metadata can be found here.</td> <td></td></tr> <tr><td>contentContainers</td> <td>Used to add content containers with specified elements in each structure type. More details on defining content container structure can be found here.</td> <td></td></tr> <tr><td>relationships</td> <td>Used to add specified types of relationships between structure types. More details on relationships can be found here.</td> <td></td></tr></tbody></table> <h2 id="content-containers"><a href="#content-containers" class="header-anchor">#</a> Content containers</h2> <p>The following sections explains how to configure content containers. Each type can have multiple content containers that need to be predefined within the scheme <code>.activities-rc.json</code>.</p> <h3 id="code-example-2"><a href="#code-example-2" class="header-anchor">#</a> Code Example</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;contentContainers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PERSPECTIVE&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Perspective&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;HTML&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;IMAGE&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;VIDEO&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;ASSESSMENT&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;EMBED&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;BREAK&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;ACCORDION&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;CAROUSEL&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;MODAL&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;TABLE&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;PDF&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;AUDIO&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;displayHeading&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;multiple&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;min&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;layout&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h3 id="content-container-properties"><a href="#content-container-properties" class="header-anchor">#</a> Content container properties</h3> <table><thead><tr><th>Property</th> <th>Description</th> <th>Values</th></tr></thead> <tbody><tr><td>type</td> <td><code>const-cased</code> string for marking <code>ContentContainer</code> type.</td> <td>String</td></tr> <tr><td>templateId</td> <td><code>const-cased</code> string that defines which custom <code>ContentContainer</code> is used to display this container. Needs to match the <code>templateId</code> property of the desired custom <code>ContentContainer</code>. If not specified the default <code>ContentContainer</code> is used to display this container.</td> <td>String</td></tr> <tr><td>label</td> <td>String used for referencing <code>ContentContainer</code> on the UI.</td> <td>String</td></tr> <tr><td>multiple</td> <td>Defines if there can be multiple instances of the <code>ContentContainer</code> inside a single <code>Activity</code>. False by default.</td> <td>Boolean</td></tr> <tr><td>min</td> <td>Defines minimum number of a given content container allowed within an activity. Those will be auto-created.</td> <td>Number</td></tr> <tr><td>max</td> <td>Defines the maximum number of a given content container allowed within an activity. Must be greater or equal to min.</td> <td>Number</td></tr> <tr><td>types</td> <td>An array of possible elements for the content container type. If not specified, all types of elements are allowed. All currently available types are displayed in the code example above.</td> <td>Array<code>&lt;String&gt;</code></td></tr> <tr><td>displayHeading</td> <td>Defines if the heading is displayed on the top of the content container. False by default.</td> <td>Boolean</td></tr> <tr><td>layout</td> <td>Defines if elements inside the container can be displayed in two rows. False by default.</td> <td>Boolean</td></tr> <tr><td>config</td> <td>Defines <code>ContentContainer</code> specific properties.</td> <td>Object</td></tr> <tr><td>required</td> <td>Defines if an instance of the <code>ContentContainer</code> is created if non exist. True by default.</td> <td>Boolean</td></tr> <tr><td>publishedAs</td> <td>Defines the name of the file under which the container will be published. Defaults to <code>container</code>. The name of the structure component used is the <code>kebab-cased</code> version of the <code>type</code> property. (example: ABC_DEF -&gt; abc-def)</td> <td>String</td></tr></tbody></table> <h2 id="activity-metadata"><a href="#activity-metadata" class="header-anchor">#</a> Activity metadata</h2> <p>Code needs to be added in <code>.activities-rc.json</code> file, inside of the <code>OUTLINE_LEVELS</code> meta arrays. Metadata will be displayed in the activity sidebar:</p> <h3 id="_1-input"><a href="#_1-input" class="header-anchor">#</a> 1. Input</h3> <h4 id="code-example-3"><a href="#code-example-3" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;inputKey&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;INPUT&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Input field&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;required&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">250</span>  
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview"><a href="#preview" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_2-text-area"><a href="#_2-text-area" class="header-anchor">#</a> 2. Text Area</h3> <h4 id="code-example-4"><a href="#code-example-4" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;textareaKey&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TEXTAREA&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;required&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">250</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-2"><a href="#preview-2" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_3-checkbox"><a href="#_3-checkbox" class="header-anchor">#</a> 3. Checkbox</h3> <h4 id="code-example-5"><a href="#code-example-5" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;textareaKey&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TEXTAREA&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;required&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">250</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-3"><a href="#preview-3" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_4-switch"><a href="#_4-switch" class="header-anchor">#</a> 4. Switch</h3> <h4 id="code-example-6"><a href="#code-example-6" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;textareaKey&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TEXTAREA&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Description&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;required&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">250</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-4"><a href="#preview-4" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_5-color-picker"><a href="#_5-color-picker" class="header-anchor">#</a> 5. Color picker</h3> <h4 id="code-example-7"><a href="#code-example-7" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;colorKey&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;COLOR&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Pick a color&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-5"><a href="#preview-5" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_6-select"><a href="#_6-select" class="header-anchor">#</a> 6. Select</h3> <h4 id="code-example-8"><a href="#code-example-8" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;selectKey&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SELECT&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Select From List&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;options&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;selection 1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;selection 2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;selection 3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">15</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-6"><a href="#preview-6" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_7-multiselect"><a href="#_7-multiselect" class="header-anchor">#</a> 7. Multiselect</h3> <h4 id="code-example-9"><a href="#code-example-9" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;multiselectKey&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MULTISELECT&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Objective&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Select From List&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;options&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Option 1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Option 2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Option 3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token number">3</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-7"><a href="#preview-7" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_8-date-picker"><a href="#_8-date-picker" class="header-anchor">#</a> 8. Date Picker</h3> <h4 id="code-example-10"><a href="#code-example-10" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;datePicker&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DATETIME&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;date picker&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-8"><a href="#preview-8" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_9-html-with-quill-editor"><a href="#_9-html-with-quill-editor" class="header-anchor">#</a> 9. HTML with Quill editor</h3> <h4 id="code-example-11"><a href="#code-example-11" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HTML&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html with quill&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-9"><a href="#preview-9" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h3 id="_10-file-upload"><a href="#_10-file-upload" class="header-anchor">#</a> 10. File upload</h3> <h4 id="code-example-12"><a href="#code-example-12" class="header-anchor">#</a> Code example</h4> <div class="language-json extra-class"><pre class="language-json"><code>meta<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;file&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FILE&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;File Upload&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Click to add...&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;ext&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;pdf&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;xlsx&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;mp3&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;ogg&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;wma&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;rar&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tar.gz&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;7z&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;zip&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;jpeg&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;png&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;xml&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tar&quot;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="preview-10"><a href="#preview-10" class="header-anchor">#</a> Preview</h4> <div class="custom-block tip"><p class="custom-block-title">TODO</p> <p>Add image</p></div> <h2 id="relationships"><a href="#relationships" class="header-anchor">#</a> Relationships</h2> <p>The following section explains how to configure relationships between structure types. These are defined within the scope of a structure type within <code>.activities-rc.json</code>.</p> <h3 id="code-example-13"><a href="#code-example-13" class="header-anchor">#</a> Code example</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;relationships&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prerequisites&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prerequisites&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Select prerequisites&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;multiple&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;searchable&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;allowEmpty&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;allowCircularLinks&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;allowInsideLineage&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h3 id="properties"><a href="#properties" class="header-anchor">#</a> Properties</h3> <table><thead><tr><th>Property</th> <th>Description</th> <th>Type</th></tr></thead> <tbody><tr><td>type</td> <td>Defines the type of the relationship.</td> <td>String</td></tr> <tr><td>label</td> <td>Label for the current relationship.</td> <td>String</td></tr> <tr><td>placeholder</td> <td>Defines the placeholder label for the relationship.</td> <td>String</td></tr> <tr><td>multiple</td> <td>Defines if a relationship can have multiple associations. True by default.</td> <td>Boolean</td></tr> <tr><td>searchable</td> <td>Defines if you can search for the list of activities. True by default.</td> <td>Boolean</td></tr> <tr><td>allowEmpty</td> <td>Defines if the list of relationships can be empty. True by default.</td> <td>Boolean</td></tr> <tr><td>allowCircularLinks</td> <td>Defines if you can set circular relationships. A can have a relationship with B and B can have a relationship with A. False by default.</td> <td>Boolean</td></tr> <tr><td>allowInsideLineage</td> <td>Defines if you can set relationships with parent/child activities. False by default.</td> <td>Boolean</td></tr></tbody></table> <h2 id="element-metadata"><a href="#element-metadata" class="header-anchor">#</a> Element metadata</h2> <p>Configurable inputs may be added to a content element by specifying the content element type inside the tesMeta array (inside the scheme) and then adding the configurable inputs in the element's meta array.</p> <h3 id="code-example-14"><a href="#code-example-14" class="header-anchor">#</a> Code example</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">elementMeta</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'VIDEO'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">inputs</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'transcript'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'TEXTAREA'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'Transcript'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">placeholder</span><span class="token operator">:</span> <span class="token string">'Click to add...'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'caption'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'FILE'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'Caption'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">placeholder</span><span class="token operator">:</span> <span class="token string">'Click to upload text file'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">validate</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">ext</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'txt'</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="workflow"><a href="#workflow" class="header-anchor">#</a> Workflow</h2> <p>The following section explains how to configure a workflow. Workflows are defined outside of schemas and are assigned to a schema by adding a <code>worfklowId</code> to a schema's definition.</p> <h3 id="code-example-15"><a href="#code-example-15" class="header-anchor">#</a> Code example</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token keyword">const</span> <span class="token constant">DEMO_WORKFLOW</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">'DEMO_WORKFLOW'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">statuses</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">'TODO'</span><span class="token punctuation">,</span> <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'Todo'</span><span class="token punctuation">,</span> <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'#E91E63'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">'IN_PROGRESS'</span><span class="token punctuation">,</span> <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'In progress'</span><span class="token punctuation">,</span> <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'#039BE5'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">'REVIEW'</span><span class="token punctuation">,</span> <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'Review'</span><span class="token punctuation">,</span> <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'#00BFA5'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">'DONE'</span><span class="token punctuation">,</span> <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'Done'</span><span class="token punctuation">,</span> <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'#00BFA5'</span>  <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token constant">MODULE</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'MODULE'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">rootLevel</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">isTrackedInWorkflow</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'Module'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'#5187C7'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">subLevels</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'MODULE'</span><span class="token punctuation">,</span> <span class="token string">'LESSON'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+  
+<span class="token keyword">const</span> <span class="token constant">LESSON</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'LESSON'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">isTrackedInWorkflow</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'Lesson'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'#08A9AD'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">contentContainers</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'PAGE'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token constant">DEMO_SCHEMA</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">'DEMO_SCHEMA'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">workflowId</span><span class="token operator">:</span> <span class="token constant">DEMO_WORKFLOW</span><span class="token punctuation">.</span>id<span class="token punctuation">,</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Demo course'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">structure</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token constant">MODULE</span><span class="token punctuation">,</span> <span class="token constant">LESSON</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+  
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token constant">SCHEMAS</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token constant">DEMO_SCHEMA</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token constant">WORKFLOWS</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token constant">DEMO_WORKFLOW</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="workflow-properties"><a href="#workflow-properties" class="header-anchor">#</a> Workflow properties</h3> <table><thead><tr><th>Property</th> <th>Description</th> <th>Type</th></tr></thead> <tbody><tr><td>id</td> <td>Workflow identifier.</td> <td>String</td></tr> <tr><td>statuses</td> <td>An array of possible activity statuses.</td> <td>Array&lt;ActivityStatus&gt;</td></tr> <tr><td>dueDateWarningThreshold</td> <td>Defines threshold (in days, weeks or months) relative to activity's due date, after which the warning of upcoming due date is displayed.</td> <td>Object</td></tr></tbody></table> <h3 id="activity-status-properties"><a href="#activity-status-properties" class="header-anchor">#</a> Activity Status properties</h3> <table><thead><tr><th>Property</th> <th>Description</th> <th>Type</th></tr></thead> <tbody><tr><td>id</td> <td>Activity status identifier.</td> <td>String</td></tr> <tr><td>label</td> <td>Display label.</td> <td>String</td></tr> <tr><td>color</td> <td>Display color.</td> <td>String</td></tr> <tr><td>default</td> <td>Defines that the status is the default, which the activity has when it's created.</td> <td>Boolean</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tailor-docs/tailor/developer-guide/getting-started.html" class="prev">
+        Getting Started
+      </a></span> <span class="next"><a href="/tailor-docs/tailor/developer-guide/publishing.html">
+        Publishing
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/tailor-docs/assets/js/app.b077ca12.js" defer></script><script src="/tailor-docs/assets/js/2.14e4ed1d.js" defer></script><script src="/tailor-docs/assets/js/14.78819804.js" defer></script>
+  </body>
+</html>
