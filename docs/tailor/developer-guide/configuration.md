@@ -330,16 +330,10 @@ Add image
 
 ``` json
 meta: [{
-  "key": "textareaKey",
-  "type": "TEXTAREA",
-  "label": "Description",
-  "placeholder": "Click to add...",
-  "validate": {
-    "rules": {
-      "required": false,
-      "max": 250
-    }
-  }
+  "key": "checkboxKey",
+  "type": "CHECKBOX",
+  "label": "Generic checkbox label",
+  "description": "Description for a checkbox"
 }]
 ```
 
@@ -355,16 +349,10 @@ Add image
 
 ``` json
 meta: [{
-  "key": "textareaKey",
-  "type": "TEXTAREA",
-  "label": "Description",
-  "placeholder": "Click to add...",
-  "validate": {
-    "rules": {
-      "required": false,
-      "max": 250
-    }
-  }
+  "key": "switchKey",
+  "type": "SWITCH",
+  "label": "Generic switch label",
+  "description": "Description for a switch"
 }]
 ```
 
