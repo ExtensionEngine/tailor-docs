@@ -280,7 +280,7 @@ Code needs to be added in `.activities-rc.json` file, inside of the `OUTLINE_LEV
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "inputKey",
   "type": "INPUT",
   "label": "Input field",
@@ -304,7 +304,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "textareaKey",
   "type": "TEXTAREA",
   "label": "Description",
@@ -329,7 +329,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "checkboxKey",
   "type": "CHECKBOX",
   "label": "Generic checkbox label",
@@ -348,7 +348,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "switchKey",
   "type": "SWITCH",
   "label": "Generic switch label",
@@ -367,7 +367,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "colorKey",
   "type": "COLOR",
   "label": "Pick a color"
@@ -385,7 +385,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "selectKey",
   "type": "SELECT",
   "label": "Select From List",
@@ -413,7 +413,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "multiselectKey",
   "type": "MULTISELECT",
   "label": "Objective",
@@ -442,7 +442,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "datePicker",
   "type": "DATETIME",
   "label": "date picker"
@@ -460,7 +460,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "html",
   "type": "HTML",
   "label": "html with quill"
@@ -478,7 +478,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "file",
   "type": "FILE",
   "label": "File Upload",
