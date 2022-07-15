@@ -238,7 +238,7 @@ Flat structure does not have the `<activity_ID>` folder, but rather stores all a
 
 ### Default repository structure
 
-![Default structure](~@source/tailor/assets/images/S3_structure.png)
+![Default structure](~@source/assets/images/S3_structure.png)
 ::: tip TODO
 Update image
 :::
@@ -265,7 +265,7 @@ In order to use the flat repository structure, following line needs to be added 
 FLAT_REPO_STRUCTURE=1
 ```
 
-![Flat structure](~@source/tailor/assets/images/flat-repo-structure.png)
+![Flat structure](~@source/assets/images/flat-repo-structure.png)
 ::: tip TODO
 Update image
 :::

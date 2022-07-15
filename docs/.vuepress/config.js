@@ -6,53 +6,63 @@ module.exports = {
   ],
   theme: 'default-prefers-color-scheme',
   themeConfig: {
+    displayAllHeaders: false,
     nav: [
-      { text: 'Tailor', link: 'https://github.com/ExtensionEngine/tailor' },
-      { text: 'Boutique', link: 'https://github.com/ExtensionEngine/boutique' },
-      { text: 'Tape', link: 'https://github.com/ExtensionEngine/tape' }
+      { text: 'Concepts', link: '/concepts' },
+      { text: 'Configuration', link: '/configuration/reference' },
+      {
+        text: 'Guides',
+        ariaLabel: 'Guides menu',
+        items: [
+          { text: 'User guide', link: '/user-guide/catalog' },
+          { text: 'Dev guide', link: '/developer-guide/getting-started' }
+        ]
+      },
+      { text: 'Tutorials', link: '/tutorials/intro' },
+      { text: 'GitHub', link: 'https://github.com/ExtensionEngine/tailor' }
     ],
-    sidebar: [{
-      title: 'Tailor',
-      children: [
-        '/tailor/intro',
-        '/tailor/concepts',
+    sidebar: {
+      '/configuration/': [
+        'reference',
+        'examples'
+      ],
+      '/user-guide/': [
+        'catalog',
+        'repository',
+        'editor',
+        'collaboration',
+        'admin',
+        'profile'
+      ],
+      '/developer-guide/': [
+        'getting-started',
+        'configuration',
+        'publishing',
         {
-          title: 'User guide',
+          title: 'Extensions',
           collapsable: false,
           children: [
-            '/tailor/user-guide/catalog',
-            '/tailor/user-guide/repository',
-            '/tailor/user-guide/editor',
-            '/tailor/user-guide/collaboration',
-            '/tailor/user-guide/admin',
-            '/tailor/user-guide/profile'
+            '/developer-guide/extensions/introduction',
+            '/developer-guide/extensions/elements',
+            '/developer-guide/extensions/containers',
+            '/developer-guide/extensions/metas',
+            '/developer-guide/extensions/utils'
           ]
         },
-        {
-          title: 'Developer guide',
-          collapsable: false,
-          children: [
-            '/tailor/developer-guide/getting-started',
-            '/tailor/developer-guide/configuration',
-            '/tailor/developer-guide/publishing',
-            {
-              title: 'Extensions',
-              children: [
-                '/tailor/developer-guide/extensions/introduction',
-                '/tailor/developer-guide/extensions/elements',
-                '/tailor/developer-guide/extensions/containers',
-                '/tailor/developer-guide/extensions/metas',
-                '/tailor/developer-guide/extensions/utils'
-              ]
-            },
-            '/tailor/developer-guide/sso',
-            '/tailor/developer-guide/storage-proxy',
-            '/tailor/developer-guide/branding',
-            '/tailor/developer-guide/migration'
-          ]
-        }
+        'sso',
+        'storage-proxy',
+        'branding',
+        'migration'
+      ],
+      '/tutorials/': [
+        'intro'
+      ],
+      '/': [
+        '',
+        'concepts',
+        'intro'
       ]
-    }]
+    }
   },
   base: '/tailor-docs/'
 }

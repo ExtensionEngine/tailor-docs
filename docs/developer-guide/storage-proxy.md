@@ -42,11 +42,11 @@ openssl rsa -in private-key.pem -outform PEM -pubout -out public-key.pem
 
 Add the public key to the “Public keys” on the CloudFront service page in the “Key management” section. 
 
-![cf-public-keys](~@source/tailor/assets/images/cf-public-keys.png)
+![cf-public-keys](~@source/assets/images/cf-public-keys.png)
 
 If there are no key groups yet, one should be created in the “Key groups” listing. Add the public key to the key group that’ll be used by the CloudFront distribution.
 
-![cf-key-groups](~@source/tailor/assets/images/cf-key-groups.png)
+![cf-key-groups](~@source/assets/images/cf-key-groups.png)
 
 CloudFront distribution can be created from the CloudFront service page.
 Assuming the S3 service is used as the asset storage, origin settings should be automatically populated after choosing the S3 bucket origin domain name from the list of provided field options. To only allow access to the S3 bucket through CloudFront distribution, set the following settings:
@@ -54,17 +54,17 @@ Assuming the S3 service is used as the asset storage, origin settings should be 
 * **Grant Read Permissions on Bucket** to *Yes, Update bucket policy*
     * This will automatically generate the S3 access policy to allow the S3:GetObject action only to the CloudFront distribution. CloudFront distribution is given access through Origin Access Identity. If it doesn’t exist yet, you can create it immediately from the form.
 
-![cf-bucket-access](~@source/tailor/assets/images/cf-bucket-access.png)
+![cf-bucket-access](~@source/assets/images/cf-bucket-access.png)
 
 If the proxy is set to a different domain than the Tailor instance, **Origin Request Policy** in the default cache behavior settings should be set to *Managed-CORS-CustomOrigin*, to forward the *origin* header to the S3 bucket.
 To restrict access to the CloudFront resources using signed cookies, **Restrict Viewer Access** should be set to *Yes*, and the previously created **Trusted Key Group** should be picked.
 
-![cf-cache-behavior](~@source/tailor/assets/images/cf-cache-behavior.png)
+![cf-cache-behavior](~@source/assets/images/cf-cache-behavior.png)
 
 When **signed cookies** are used for access control, CloudFront distribution’s **alternate domain name** should be set to the subdomain or the domain of the Tailor instance. This can be achieved with the following [steps](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/CNAMEs.html#CreatingCNAME).
 The rest of the settings can be optionally set if needed, and the CloudFront distribution can be created.
 
-![cf-distribution-list](~@source/tailor/assets/images/cf-distribution-list.png)
+![cf-distribution-list](~@source/assets/images/cf-distribution-list.png)
 
 After you’ve successfully created the CloudFront distribution, you should configure Tailor to use it as an asset proxy. This can be achieved by setting the following environment variables in Tailor’s `.env`:
 * **STORAGE_PROXY** to *cloudfront*

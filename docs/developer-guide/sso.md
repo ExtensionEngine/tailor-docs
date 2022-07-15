@@ -10,7 +10,7 @@ To enable SSO via OIDC:
 * Configure Identity provider
 * Configure Tailor (done by developers using environment variables)
 
-![SSO login](~@source/tailor/assets/images/sso.png)
+![SSO login](~@source/assets/images/sso.png)
 
 ## Setup
 

@@ -29,7 +29,7 @@ function hook(element: SequelizeModel, services: Object) => element
 
 The `hook` function returns the original or modified element. For example, depending on the hook type, we can modify the element before saving it to the database (`beforeSave`) or before delivering it to the frontend (e.g., `afterLoaded`).
 
-![Element hooks](~@source/tailor/assets/images/tce-hooks.png)
+![Element hooks](~@source/assets/images/tce-hooks.png)
 
 #### `edit/index.vue`
 The file used by the front-end to display the content element. This file needs to exist in some form but it does not need to be in an `edit` folder or with this name. The only requirement is that it is imported in the `index.js` file as `Edit`.
