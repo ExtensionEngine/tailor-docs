@@ -24,6 +24,8 @@
 - Initialize database by running `npm run db migrate`
 - Enable default repository schema by setting env variable `ENABLE_DEFAULT_SCHEMA=1` or
 define a custom one (more details [in the configuration section](./configuration.md)).
+- Configure Tailor by following the steps [in the configuration section](./configuration.md), specifically creating a `tailor.config.js` out of `tailor.config.js.example`.
+- Generate a value for `STORAGE_PROXY_PRIVATE_KEY` located in Tailor's `.env` file. See [Setup Local proxy steps](./storage-proxy.md#setup)
 - You can create admin user by running `npm run add:admin <email> <password>`
 - App branding is configured via values set in a file named `.brandrc` (or
   `.brandrc.js`). Use the `.brandrc.example` file as a template: `cp
