@@ -280,7 +280,7 @@ Code needs to be added in `.activities-rc.json` file, inside of the `OUTLINE_LEV
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "inputKey",
   "type": "INPUT",
   "label": "Input field",
@@ -304,7 +304,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "textareaKey",
   "type": "TEXTAREA",
   "label": "Description",
@@ -329,17 +329,11 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
-  "key": "textareaKey",
-  "type": "TEXTAREA",
-  "label": "Description",
-  "placeholder": "Click to add...",
-  "validate": {
-    "rules": {
-      "required": false,
-      "max": 250
-    }
-  }
+"meta": [{
+  "key": "checkboxKey",
+  "type": "CHECKBOX",
+  "label": "Generic checkbox label",
+  "description": "Description for a checkbox"
 }]
 ```
 
@@ -354,17 +348,11 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
-  "key": "textareaKey",
-  "type": "TEXTAREA",
-  "label": "Description",
-  "placeholder": "Click to add...",
-  "validate": {
-    "rules": {
-      "required": false,
-      "max": 250
-    }
-  }
+"meta": [{
+  "key": "switchKey",
+  "type": "SWITCH",
+  "label": "Generic switch label",
+  "description": "Description for a switch"
 }]
 ```
 
@@ -379,7 +367,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "colorKey",
   "type": "COLOR",
   "label": "Pick a color"
@@ -397,7 +385,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "selectKey",
   "type": "SELECT",
   "label": "Select From List",
@@ -425,7 +413,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "multiselectKey",
   "type": "MULTISELECT",
   "label": "Objective",
@@ -454,7 +442,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "datePicker",
   "type": "DATETIME",
   "label": "date picker"
@@ -472,7 +460,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "html",
   "type": "HTML",
   "label": "html with quill"
@@ -490,7 +478,7 @@ Add image
 #### Code example
 
 ``` json
-meta: [{
+"meta": [{
   "key": "file",
   "type": "FILE",
   "label": "File Upload",
